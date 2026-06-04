@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masood | Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Disable entrance/scroll animations - show elements statically */
+        .fade-in,
+        .fade-in * {
+            opacity: 1 !important;
+            transform: none !important;
+            animation: none !important;
+            transition: none !important;
+        }
+        /* Disable any keyframe animations commonly used */
+        [class*="animate"], [class*="fade"], [class*="slide"] {
+            animation: none !important;
+            transition: none !important;
+        }
+        /* Floating action buttons (Fiverr & WhatsApp) */
+        .floating-actions {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 9999;
+        }
+        .floating-actions a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            color: #ffffff;
+            text-decoration: none;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+            font-size: 20px;
+        }
+        .floating-actions a.fiverr { background: #1dbf73; }
+        .floating-actions a.whatsapp { background: #25D366; }
+        .floating-actions a:focus { outline: 2px solid rgba(255,255,255,0.2); }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">Masood</div>
+                <ul class="nav-menu">
+                    <li><a href="#about" class="nav-link">ABOUT</a></li>
+                    <li><a href="#skills" class="nav-link">SKILLS</a></li>
+                    <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+                    <li><a href="#papers" class="nav-link">RESEARCH ARTICLES</a></li>
+                    <li><a href="#education" class="nav-link">EDUCATION</a></li>
+                    <li><a href="#certifications" class="nav-link">CERTIFICATIONS</a></li>
+                    <li><a href="#timeline" class="nav-link">EXPERIENCE</a></li>
+                    <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                    <li><a href="./Muhammad_Masood_Ul_Rahman_Usmani_CV.pdf" target="_blank" class="nav-link resume-link">RESUME</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="profile-circle">
+                <img src="masood.jpeg" alt="Profile">
+            </div>
+            <h1 class="hero-name">M. Masood ul Rahman Usmani</h1>
+            <p class="hero-subtitle">Computer Scientist & ML Expert</p>
+            <p style="color: rgba(255,255,255,0.8); font-size: 0.95rem;">📍 Lodhran, Pakistan</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-left">
+                    <div class="about-image">
+                        <img src="about.jpeg" alt="About">
+                    </div>
+                </div>
+                <div class="about-right">
+                    <h2>M. Masood ul Rahman Usmani</h2>
+                    <p class="subtitle">Computer Scientist & Machine Learning Specialist</p>
+                    <p class="about-text">
+                        Highly motivated professional with Master of Science degree in Computer Science from COMSATS University Islamabad. Expert in Machine Learning, Deep Learning, Python, C++, Java, and Android Development. With over 1+ years of experience as Computer Lecturer, I have developed strong skillset in teaching Data Science, Android App Development, Cloud Computing, and Machine Learning. As Project Supervisor, I excel at managing projects and mentoring students. Creative problem-solver committed to delivering high-quality work.
+                    </p>
+                    <div class="education-list">
+                        <p><strong>Contact Info:</strong></p>
+                        <ul>
+                            <li>📧 muhammadmasoodulrhmanusmani@gmail.com</li>
+                            <li>📱 +92 308 2799292</li>
+                            <li>📍 Lodhran, Pakistan</li>
+                        </ul>
+                    </div>
+                    <div class="social-icons-section">
+                        <a href="https://www.linkedin.com/in/muhammad-masood-ul-rahman-316b06244?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/RaoMasood1" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.researchgate.net/profile/Muhammad-Usmani-26" target="_blank"><i class="fab fa-researchgate"></i></a>
+                        <a href="https://www.facebook.com/share/1Db7RJLPdM/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/masoodrao_786?igsh=MW5tZWQ5aWluMjF0aQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <p class="section-subtitle">Proficient in multiple languages, frameworks, and AI technologies</p>
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <h3>Python</h3>
+                    <p>Expert-level proficiency with extensive ML and data science experience.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Machine Learning</h3>
+                    <p>Scikit-learn, TensorFlow, Keras, PyTorch, and advanced algorithms.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon"><i class="fas fa-cube"></i></div>
+                    <h3>Deep Learning</h3>
+                    <p>CNN, RNN, Reinforcement Learning, and neural network optimization.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon"><i class="fas fa-image"></i></div>
+                    <h3>Computer Vision</h3>
+                    <p>OpenCV, image processing, object detection, and face recognition.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon"><i class="fab fa-java"></i></div>
+                    <h3>Java & Android</h3>
+                    <p>OOP principles, Android app development, and mobile applications.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon"><i class="fas fa-plus-square"></i></div>
+                    <h3>C++ & C#</h3>
+                    <p>Systems programming and application development expertise.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Data Science</h3>
+                    <p>Data analysis, preprocessing, visualization with Pandas & Matplotlib.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud Computing</h3>
+                    <p>Cloud-based solutions and distributed systems knowledge.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Teaching & Mentoring</h3>
+                    <p>Experienced Computer Lecturer and Project Supervisor with strong communication skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <p class="section-label">ACADEMIC PROJECTS</p>
+            <h2>Machine Learning & AI Projects</h2>
+            <p class="section-subtitle">Innovative solutions leveraging deep learning and computer vision technologies</p>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-img" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="project-overlay"><h3>COVID Detection from Chest X-Ray</h3><p>CNN model for COVID-19 detection from X-ray images</p></div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-img" style="background: linear-gradient(135deg, #0099ff 0%, #007acc 100%);"></div>
+                    <div class="project-overlay"><h3>Pneumonia Detection CNN</h3><p>Deep learning model with HTML interface for medical diagnosis</p></div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-img" style="background: linear-gradient(135deg, #00c853 0%, #009688 100%);"></div>
+                    <div class="project-overlay"><h3>School Management System</h3><p>Full-featured system using HTML, CSS, jQuery, PHP, MySQL</p></div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-img" style="background: linear-gradient(135deg, #ff6e40 0%, #ff5722 100%);"></div>
+                    <div class="project-overlay"><h3>Heart Failure Prediction</h3><p>ML algorithms for predicting heart failure based on patient data</p></div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-img" style="background: linear-gradient(135deg, #76b900 0%, #558b2f 100%);"></div>
+                    <div class="project-overlay"><h3>Live Face Detection</h3><p>Real-time face detection using OpenCV and Python</p></div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-img" style="background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);"></div>
+                    <div class="project-overlay"><h3>Lung Cancer Prediction</h3><p>ML-based prediction system using classification techniques</p></div>
+                </div>
+            </div>
+            <div class="projects-footer">
+                <p>Additional project: SONAR Rock vs Mine Prediction using SVM & Random Forest</p>
+                <a href="#" class="btn-github"><i class="fab fa-github"></i> View More Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Papers Section -->
+    <section class="papers" id="papers">
+        <div class="container">
+            <h2>Publications & Research</h2>
+            <div class="papers-content">
+                <div class="paper-item fade-in">
+                    <h3><a href="https://scholar.google.com/scholar?q=Formal+Modeling+and+Verification+of+IoT-Based+Smart+Waste+Management+System+Using+SPIN" target="_blank" rel="noopener">Formal Modeling and Verification of IoT-Based Smart Waste Management System Using SPIN</a></h3>
+                    <p>M. Rashid, M. M. ul Rehman, H. Raza, M. Qadeer, I. Rasool, and N. A. Zafar. 2023</p>
+                </div>
+                <div class="paper-item fade-in">
+                    <h3><a href="https://scholar.google.com/scholar?q=Verification+of+Safety+of+Aircraft+Arrival+Procedure+Using+SPIN+Model+Checker" target="_blank" rel="noopener">Verification of Safety of Aircraft Arrival Procedure Using SPIN Model Checker</a></h3>
+                    <p>Proc. 2023 Int. Conf. Frontiers Inf. Technol. (FIT), Dec. 2023, pp. 262, 267</p>
+                </div>
+                <div class="paper-item fade-in">
+                    <h3><a href="https://scholar.google.com/scholar?q=Formal+Verification+of+Aircraft+Departure+Procedure+Using+SPIN+Model+Checker" target="_blank" rel="noopener">Formal Verification of Aircraft Departure Procedure Using SPIN Model Checker</a></h3>
+                    <p>Proc. 2023 18th Int. Conf. Emerging Technol. (ICET), Nov. 2023, pp. 165, 170</p>
+                </div>
+                <div class="paper-item fade-in">
+                    <h3><a href="https://scholar.google.com/scholar?q=Multi-Class+Classification+of+Alzheimer%27s+Disease+Stages+Using+Deep+Learning" target="_blank" rel="noopener">Multi-Class Classification of Alzheimer's Disease Stages Using Deep Learning</a></h3>
+                    <p>Makki Riaz Khan, M. M. U. R. Usmani, Muzamil Mehboob, and others. Journal of Computing and Biomedical Informatics, vol. 11, no. 01, 2026</p>
+                </div>
+                <div class="paper-item fade-in">
+                    <h3><a href="https://scholar.google.com/scholar?q=IoT+Enabled+Internet+of+Things+Framework+for+Diabetes+Management" target="_blank" rel="noopener">IoT Enabled Internet of Things Framework for Diabetes Management</a></h3>
+                    <p>M. M. U. R. Usmani, R. Rafiq, and M. Farhan. The Journal of Supercomputing, Under Revision</p>
+                </div>
+                <div class="paper-item fade-in">
+                    <h3><a href="https://scholar.google.com/scholar?q=Pneumonia+Classification+Using+DenseNet201+on+Custom+Combined+Dataset" target="_blank" rel="noopener">Pneumonia Classification Using DenseNet201 on Custom Combined Dataset</a></h3>
+                    <p>M. M. U. R. Usmani and M. R. Khan. Journal of AI and Data Mining, Submitted</p>
+                </div>
+            </div>
+            <div class="papers-footer" style="text-align: center; margin-top: 2.5rem;">
+                <a href="https://scholar.google.com/citations?user=Xjf8sZoAAAAJ&hl=en" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; padding: 12px 28px; background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%); color: white; text-decoration: none; border-radius: 30px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(37, 99, 235, 0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(37, 99, 235, 0.3)';">
+                    <i class="fas fa-graduation-cap"></i> View Google Scholar Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <p class="section-label">ACADEMIC BACKGROUND</p>
+            <h2>Education</h2>
+            <p class="section-subtitle dark">A strong academic foundation in computer science, research, and intelligent systems.</p>
+            <div class="education-grid">
+                <div class="education-card fade-in highlight">
+                    <div class="education-icon"><img src="g.logo.jpg" alt="COMSATS"></div>
+                    <div>
+                        <span class="education-date">2022 - July 2024</span>
+                        <h3>MS Computer Science</h3>
+                        <h4>COMSATS University Islamabad, Sahiwal</h4>
+                        <p>CGPA: 3.87/4</p>
+                        <p>Thesis: An ML-Enabled Internet of Things Framework for Diabetes Management</p>
+                    </div>
+                </div>
+                <div class="education-card fade-in">
+                    <div class="education-icon"><img src="iub.logo.png" alt="IUB"></div>
+                    <div>
+                        <span class="education-date">Sep 2020 - Feb 2022</span>
+                        <h3>Master of Computer Science</h3>
+                        <h4>The Islamia University of Bahawalpur</h4>
+                        <p>CGPA: 3.21/4</p>
+                    </div>
+                </div>
+                <div class="education-card fade-in">
+                    <div class="education-icon"><img src="iub.logo.png" alt="IUB"></div>
+                    <div>
+                        <span class="education-date">2018 - 2020</span>
+                        <h3>Bachelor of Science</h3>
+                        <h4>The Islamia University of Bahawalpur</h4>
+                        <p>Marks: 519/800</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
+        <div class="container">
+            <p class="section-label">PROFESSIONAL LEARNING</p>
+            <h2>Certifications</h2>
+            <p class="section-subtitle">Selected certifications across machine learning, data science, programming, and software design.</p>
+            <div class="certification-groups">
+                <div class="cert-group fade-in">
+                    <div class="cert-group-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Machine Learning & AI</h3>
+                    <ul>
+                        <li>Specialization Certificate in Machine Learning - Coursera</li>
+                        <li>Supervised Machine Learning: Regression and Classification - Coursera</li>
+                        <li>Advanced Learning Algorithms - Coursera</li>
+                        <li>Unsupervised Learning, Recommenders, Reinforcement Learning - Coursera</li>
+                        <li>Deep Reinforcement Learning made-easy - Udemy</li>
+                        <li>AI for Beginners - HP Life</li>
+                    </ul>
+                </div>
+                <div class="cert-group fade-in">
+                    <div class="cert-group-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Data Science & Kaggle</h3>
+                    <ul>
+                        <li>Data Science & Analytics - HP Life</li>
+                        <li>Intro to Machine Learning - Kaggle</li>
+                        <li>Intermediate Machine Learning - Kaggle</li>
+                        <li>Feature Engineering - Kaggle</li>
+                        <li>pandas - Kaggle</li>
+                        <li>Intro to SQL and Advanced SQL - Kaggle</li>
+                        <li>Data Cleaning and Machine Learning Explainability - Kaggle</li>
+                    </ul>
+                </div>
+                <div class="cert-group fade-in">
+                    <div class="cert-group-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming & Software</h3>
+                    <ul>
+                        <li>Intro to Programming - Kaggle</li>
+                        <li>Python - Kaggle</li>
+                        <li>Intro to Deep Learning - Kaggle</li>
+                        <li>Computer Vision - Kaggle</li>
+                        <li>Intro to AI Ethics - Kaggle</li>
+                        <li>Design Patterns, Refactoring Techniques, and Code Smells made-easy - Udemy</li>
+                        <li>Introduction to CyberSecurity Awareness - HP Life</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="certification-note fade-in">
+                <i class="fas fa-award"></i>
+                <span>Certificate of Participation - International Conference on Frontiers of Information Technology 2023</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline" id="timeline">
+        <div class="container">
+            <h2>Experience</h2>
+            <p class="section-subtitle dark">A short summary of my teaching and academic experience.</p>
+            <div class="timeline-wrapper">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-logo">
+                        <img src="bzu.logo.png" alt="BZU">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Sep 2024 - Present</h3>
+                        <h4>Bahauddin Zakariya University</h4>
+                        <p>Visiting Lecturer</p>
+                        <p>Teaching Computer Science and Machine Learning courses.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-logo">
+                        <img src="./navttc_logo.png" alt="NAVTTC">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Feb 2026 - May 2026</h3>
+                        <h4>NAVTTC(National Vocational And Technical Training Commission) </h4>
+                        <p>AI Trainer</p>
+                        <p>Teaching Machine Learning and Deep Learning.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-logo">
+                        <img src="iub.logo.png" alt="IUB">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Oct 2025 - Jan 2026</h3>
+                        <h4>The Islamia University of Bahawalpur</h4>
+                        <p>Visiting Lecturer</p>
+                        <p>Facilitated graduate and undergraduate learning with lectures, lab work, assignments, and student evaluation for Cyber Security courses.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-logo">
+                        <img src="punjab.logo.png" alt="Punjab Group of Colleges">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Sep 2023 - May 2025</h3>
+                        <h4>Punjab Group of Colleges</h4>
+                        <p>Visiting Lecturer</p>
+                        <p>Delivered undergraduate BS lectures in Cloud Computing and Data Science, with practical Machine Learning lab sessions.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-logo">
+                        <img src="ggc.logo.jpg" alt="Govt. Graduate College">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Nov 2024 - April 2025</h3>
+                        <h4>Govt. Graduate College, Lodhran</h4>
+                        <p>College Teaching Intern</p>
+                        <p>Supported undergraduate Computer Science learning through lectures, labs, assignments, and attendance records.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-bg"></div>
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:muhammadmasoodulrhmanusmani@gmail.com">muhammadmasoodulrhmanusmani@gmail.com</a> | <a href="mailto:muhammadmasoodulrhmanusmani@yahoo.com">muhammadmasoodulrhmanusmani@yahoo.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+923082799292">+92 308 2799292</a></p>
+                <p><strong>WeChat ID:</strong> MasoodRao</p>
+                <p><strong>Location:</strong> Lodhran, Pakistan</p>
+                
+            </div>
+            <form class="contact-form" action="https://formspree.io/f/mzdqbnvv" method="POST">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Your Name *" required>
+                </div>
+                <div class="form-row">
+                    <input type="email" name="email" placeholder="Your Email *" required>
+                </div>
+                <div class="form-row full-width">
+                    <input type="tel" name="phone" placeholder="Your Phone">
+                </div>
+                <div class="form-row full-width">
+                    <textarea name="message" placeholder="Your Message *" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container" style="padding: 0px;">
+            <div class="footer-wrapper">
+                
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/muhammad-masood-ul-rahman-316b06244?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/RaoMasood1" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.researchgate.net/profile/Muhammad-Usmani-26" target="_blank"><i class="fab fa-researchgate"></i></a>
+                    <a href="https://www.facebook.com/share/1Db7RJLPdM/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/masoodrao_786?igsh=MW5tZWQ5aWluMjF0aQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact</a>
+                    <a href="./Muhammad_Masood_Ul_Rahman_Usmani_CV.pdf" target="_blank">Resume</a>
+                </div>
+                <p>&copy; 2024 M. Masood ul Rahman Usmani. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Floating Fiverr & WhatsApp buttons -->
+    <div class="floating-actions" aria-hidden="false">
+        <a class="fiverr" href="https://www.fiverr.com/s/WEaxywR" target="_blank" rel="noopener" title="Hire me on Fiverr">
+            <img src="fiverr.logo.png" alt="Fiverr" style="width: 39px; height: 39px; object-fit: contain;">
+        </a>
+        <a class="whatsapp" href="https://wa.me/923082799292" target="_blank" rel="noopener" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        </a>
+    </div>
+</body>
+</html>
